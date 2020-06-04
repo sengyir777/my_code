@@ -1,10 +1,10 @@
-package com.cr.basic.test.basictest;
+package com.cr.basic.code.pcr;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BasicTestApplicationTests {
+class PcrApplicationTests {
 
     @Test
     void contextLoads() {

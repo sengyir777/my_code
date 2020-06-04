@@ -1,13 +1,13 @@
-package com.cr.basic.test.basictest;
+package com.cr.basic.code.pcr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BasicTestApplication {
+public class PcrApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BasicTestApplication.class, args);
+        SpringApplication.run(PcrApplication.class, args);
     }
 
 }
