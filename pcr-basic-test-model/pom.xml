@@ -16,6 +16,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <lombook.version>1.18.6</lombook.version>
+        <apache.commons.csv>1.6</apache.commons.csv>
     </properties>
 
     <dependencies>
@@ -23,7 +25,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombook.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>${apache.commons.csv}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
