@@ -5,13 +5,7 @@ import com.cr.basic.code.pcr.model.User;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.awt.print.Book;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -41,7 +35,7 @@ public class PcrApplication {
         Map<String, Object> stringObjectMap = strings.stream()
             .collect(Collectors.toMap(k -> k, v -> v));
         System.out.println(11);
-
+        System.out.println(UUID.randomUUID());
 
     }
 

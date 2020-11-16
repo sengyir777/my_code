@@ -17,6 +17,15 @@ import java.util.stream.Collectors;
  */
 public class TestRun {
 
+    public TestRun(){
+        System.out.println("init TestRun====");
+    }
+    private static TestRun testRun = new TestRun();
+
+    public  String toString(){
+        return "The instance is:" + this;
+    }
+
     public static void main(String[] args) {
         List<User> userList = new ArrayList();
         userList.add(new User().setId("A").setName("张三"));
@@ -30,5 +39,7 @@ public class TestRun {
             System.out.println("key--======" + key);
             System.out.println(collect.get(key));
         }
+
+        System.out.println( testRun);
     }
 }
