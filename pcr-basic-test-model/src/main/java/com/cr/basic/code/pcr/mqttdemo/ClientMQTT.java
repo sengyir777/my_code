@@ -52,7 +52,7 @@ public class ClientMQTT {
 //遗嘱        options.setWill(topic, "close".getBytes(), 2, true);
             client.connect(options);
             //订阅消息
-            int[] Qos = {1};
+            int[] Qos = {2};
             String[] topic1 = {TOPIC1};
             client.subscribe(topic1, Qos);
 
@@ -65,7 +65,7 @@ public class ClientMQTT {
      /*   ClientMQTT client = new ClientMQTT();
         client.start();*/
         ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(5, 20, 2, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
-        for (int i = 1; i <= 10; i++) {
+        for (int i = 1; i <= 1; i++) {
             System.out.println("开始接收消息。。。。。");
             poolExecutor.submit(new ConsumerTread());
             Thread.sleep(500);

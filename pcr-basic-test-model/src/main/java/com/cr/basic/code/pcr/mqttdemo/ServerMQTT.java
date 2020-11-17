@@ -100,7 +100,7 @@ public class ServerMQTT {
         server.publish(server.topic11, server.message);
         System.out.println(server.message.isRetained() + "------ratained状态");*/
         ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(5, 20, 2, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
-        for (int i = 1; i <= 5; i++) {
+        for (int i = 1; i <= 1; i++) {
             System.out.println("开始推送消息。。。。。");
             PushMessageTread pushMessageTread = new PushMessageTread(i);
             Thread.sleep(500);
